@@ -57,13 +57,13 @@ auth-approval-pipeline/
 ## 🖼️ Screenshots
 
 ### 🔁 Airflow DAG Execution
-<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.31.49 PM.png" width="600"/>
+<img src="airflow_dags/images/daily_dag_run.png" width="600"/>
 
 ### 💾 Python Script Output
-<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.34 PM.png" width="600"/>
+<img src="airflow_dags/images/csv_output.png" width="600"/>
 
 ### 📈 Tableau Dashboard Visualization
-<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.57 PM.png" width="600"/>
+<img src="airflow_dags/images/tableau_dashboard.png" width="600"/>
 
 ---
 
@@ -107,6 +107,7 @@ auth-approval-pipeline/
 ## 🧠 Author
 
 **Myke Tzul** – [LinkedIn](https://www.linkedin.com/in/mykeil-tzul) | [GitHub](https://github.com/Mykeil-tzul)
+
 
 
 
