@@ -1,114 +1,112 @@
-# 🧮 Daily Approval Rate Data Pipeline
+# 🔐 Daily Approval Rate Data Pipeline
 
-This project simulates a real-world **daily transaction approval pipeline** using **Python**, **Apache Airflow**, and **Tableau** to generate insights into approval trends and operational performance.
-
----
-
-## 🔧 Project Overview
-
-**Goal:** Automatically calculate and track the **daily approval rate** across transactions, then visualize it in Tableau.
-
-- 💻 Python for ETL and data processing
-- 📅 Airflow for scheduled pipeline orchestration
-- 📊 Tableau for dashboard insights
+This project simulates a real-world data pipeline that calculates and visualizes daily transaction approval rates. Built using **Python**, **Airflow**, and **Tableau**, it demonstrates how to orchestrate ETL workflows, summarize transaction metrics, and communicate insights through a clean dashboard.
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Overview
 
-| Tool      | Purpose                        |
-|-----------|--------------------------------|
-| Python    | ETL & summary calculations     |
-| Pandas    | Data manipulation              |
-| Airflow   | DAG scheduling & automation    |
-| Tableau   | Business KPI dashboard         |
-| CSV       | Local data output              |
+- ✅ Simulate daily merchant transaction data (approved/declined)
+- 🐍 Python script to calculate approval KPIs
+- 🗂️ Save outputs as CSV for visualization
+- 🛠️ Schedule with Apache Airflow
+- 📊 Build interactive dashboard in Tableau
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 auth-approval-pipeline/
-│
 ├── airflow_dags/
-│ └── auth_pipeline_dag.py
-│ └── images/ → screenshots
-│
+│ ├── auth_pipeline_dag.py
+│ └── images/
+│ ├── Screenshot_1.png
+│ ├── Screenshot_2.png
+│ └── Screenshot_3.png
 ├── dashboard/
-│ └── Tableau_Screenshots/
-│
+│ └── Tableau_Screenshot.twb
 ├── data/
 │ ├── daily_transactions.csv
 │ └── daily_approval_summary.csv
-│
 ├── notebooks/
 ├── sql/
-├── .gitignore
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
+
+----
+
 
 ---
 
-## 📊 Pipeline Output
+## ⚙️ How It Works
 
-### ✅ Sample Output Summary (Python)
+1. **Simulated Dataset**: `daily_transactions.csv` contains 4 days of merchant transactions with fields like `status`, `amount`, and `timestamp`.
 
-```plaintext
-  transaction_date  total_transactions  declined_transactions  approval_rate_pct
-  2025-07-30        11                  3                      72.73
-  2025-07-31        100                 12                     88.00
-  2025-08-01        100                 17                     83.00
-  2025-08-02        89                  16                     82.02
+2. **Python DAG**: `auth_pipeline_dag.py`:
+   - Reads raw CSV data
+   - Calculates total, approved, and declined transaction counts
+   - Derives daily approval rate percentage
+   - Saves `daily_approval_summary.csv` to the `data/` folder
+
+3. **Airflow**: Schedules and runs the DAG daily.
+
+4. **Tableau Dashboard**: Displays approval trends, volumes, and performance summaries.
 
 ---
-## 📸 Screenshots
 
-### 🔁 Daily DAG in Airflow
+## 🖼️ Screenshots
+
+### 🔁 Airflow DAG Execution
 <img src="airflow_dags/images/Screenshot 2025-08-03 at 8.31.49 PM.png" width="600"/>
 
-### 💾 Python Pipeline Output (CSV Generation)
+### 💾 Python Script Output
 <img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.34 PM.png" width="600"/>
 
-### 📈 Tableau Dashboard
+### 📈 Tableau Dashboard Visualization
 <img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.57 PM.png" width="600"/>
 
 ---
 
 ## ✅ What I Learned
 
-- How to orchestrate a basic pipeline in Airflow  
-- Writing custom Python ETL scripts  
-- Generating and saving daily metrics with Pandas  
-- Visual storytelling through Tableau dashboards  
-- GitHub version control and clean documentation  
+- Orchestrating data workflows using **Airflow**
+- Writing modular Python ETL scripts with **Pandas**
+- Calculating approval metrics across multiple days
+- Creating clear and visual **Tableau** dashboards
+- Managing code and assets using **Git & GitHub**
 
 ---
 
 ## 📌 Challenges Faced
 
-- Simulating realistic transaction data for decline/approval rates  
-- Dynamically calculating metrics from raw CSV  
-- Proper image path linking and rendering in GitHub  
-- Balancing simplicity with dashboard clarity  
+- Simulating realistic transaction data for test purposes  
+- Dynamically calculating metrics from raw CSV input  
+- Rendering images correctly on GitHub  
+- Balancing dashboard clarity with clean design  
 
 ---
 
-## 🚀 Next Steps
+## 🚧 Next Steps
 
-- Add email alert in Airflow on failure  
-- Upload to Streamlit for stakeholder access  
-- Add database or cloud storage layer (e.g. Snowflake or BigQuery)  
+- Add **email alerts** on DAG failure in Airflow  
+- Upload dashboard to **Streamlit** for stakeholder demo  
+- Connect to cloud storage or data warehouse (e.g., **Snowflake**, **BigQuery**)  
 
------
+---
 
-### ✅ Final Steps
+## 💻 Tech Stack
 
-1. Paste the above into `README.md` in VS Code.
-2. Save the file.
-3. In terminal:
+- Python 3.10  
+- Apache Airflow  
+- Pandas  
+- Tableau  
+- Git / GitHub  
 
-```bash
-git add README.md
-git commit -m "📝 Final README with screenshots and structure"
-git push
+---
+
+## 🧠 Author
+
+**Myke Tzul** – [LinkedIn](https://www.linkedin.com/in/mykeil-tzul) | [GitHub](https://github.com/Mykeil-tzul)
+
+
 
