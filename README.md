@@ -54,29 +54,18 @@ auth-approval-pipeline/
 
 ---
 
-## 🖼️ Screenshots
+### 📊 KPI Summary Dashboard  
+![KPI Summary Dashboard](airflow_dags/images/kpi_summary_dashboard.png)
 
-### KPI Summary
-
-![KPI Summary](airflow_dags/images/kpi_summary_dashboard.png)
-
----
-
-### Approval vs Decline Volumes
-
+### 📈 Approval vs Decline Volume  
 ![Approval vs Decline](airflow_dags/images/approval_vs_decline_volume.png)
 
----
+### 📉 Auth Trend Chart  
+![Auth Trend](airflow_dags/images/auth_trend_chart.png)
 
-### Daily Trend of Approvals vs Declines
+### 🔄 Volume Trend Comparison  
+![Volume Trend](airflow_dags/images/volume_trend_comparison.png)
 
-![Approval Trend](airflow_dags/images/auth_trend_chart.png)
-
----
-
-### Approved vs Declined Transaction Volumes
-
-![Transaction Volume Breakdown](airflow_dags/images/volume_trend_comparison.png)
 
 
 ---
