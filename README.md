@@ -56,14 +56,28 @@ auth-approval-pipeline/
 
 ## 🖼️ Screenshots
 
-### 🔁 Airflow DAG Execution
-<img src="airflow_dags/images/daily_dag_run.png" width="600"/>
+### KPI Summary
 
-### 💾 Python Script Output
-<img src="airflow_dags/images/csv_output.png" width="600"/>
+![KPI Summary](airflow_dags/images/kpi_summary_dashboard.png)
 
-### 📈 Tableau Dashboard Visualization
-<img src="airflow_dags/images/tableau_dashboard.png" width="600"/>
+---
+
+### Approval vs Decline Volumes
+
+![Approval vs Decline](airflow_dags/images/approval_vs_decline_volume.png)
+
+---
+
+### Daily Trend of Approvals vs Declines
+
+![Approval Trend](airflow_dags/images/auth_trend_chart.png)
+
+---
+
+### Approved vs Declined Transaction Volumes
+
+![Transaction Volume Breakdown](airflow_dags/images/volume_trend_comparison.png)
+
 
 ---
 
@@ -107,6 +121,7 @@ auth-approval-pipeline/
 ## 🧠 Author
 
 **Myke Tzul** – [LinkedIn](https://www.linkedin.com/in/mykeil-tzul) | [GitHub](https://github.com/Mykeil-tzul)
+
 
 
 
