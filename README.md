@@ -59,42 +59,47 @@ auth-approval-pipeline/
   2025-07-31        100                 12                     88.00
   2025-08-01        100                 17                     83.00
   2025-08-02        89                  16                     82.02
-📸 Screenshots
-🔁 Daily DAG in Airflow
-<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.31.49 PM.png" width="600"/>
-💾 Python Pipeline Output (CSV Generation)
-<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.34 PM.png" width="600"/>
-📈 Tableau Dashboard
-<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.57 PM.png" width="600"/>
-✅ What I Learned
-How to orchestrate a basic pipeline in Airflow
-
-Writing custom Python ETL scripts
-
-Generating and saving daily metrics with Pandas
-
-Visual storytelling through Tableau dashboards
-
-GitHub version control and clean documentation
-
-📌 Challenges Faced
-Simulating realistic transaction data for decline/approval rates
-
-Dynamically calculating metrics from raw CSV
-
-Proper image path linking and rendering in GitHub
-
-Balancing simplicity with dashboard clarity
-
-🚀 Next Steps
-Add email alert in Airflow on failure
-
-Upload to Streamlit for stakeholder access
-
-Add database or cloud storage layer (e.g. Snowflake or BigQuery)
-
 
 ---
+## 📸 Screenshots
+
+### 🔁 Daily DAG in Airflow
+<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.31.49 PM.png" width="600"/>
+
+### 💾 Python Pipeline Output (CSV Generation)
+<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.34 PM.png" width="600"/>
+
+### 📈 Tableau Dashboard
+<img src="airflow_dags/images/Screenshot 2025-08-03 at 8.32.57 PM.png" width="600"/>
+
+---
+
+## ✅ What I Learned
+
+- How to orchestrate a basic pipeline in Airflow  
+- Writing custom Python ETL scripts  
+- Generating and saving daily metrics with Pandas  
+- Visual storytelling through Tableau dashboards  
+- GitHub version control and clean documentation  
+
+---
+
+## 📌 Challenges Faced
+
+- Simulating realistic transaction data for decline/approval rates  
+- Dynamically calculating metrics from raw CSV  
+- Proper image path linking and rendering in GitHub  
+- Balancing simplicity with dashboard clarity  
+
+---
+
+## 🚀 Next Steps
+
+- Add email alert in Airflow on failure  
+- Upload to Streamlit for stakeholder access  
+- Add database or cloud storage layer (e.g. Snowflake or BigQuery)  
+
+-----
 
 ### ✅ Final Steps
 
@@ -106,3 +111,4 @@ Add database or cloud storage layer (e.g. Snowflake or BigQuery)
 git add README.md
 git commit -m "📝 Final README with screenshots and structure"
 git push
+
